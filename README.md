@@ -1,26 +1,18 @@
 # Fake Job Posting Classifier
 
 ### 🙋‍♂️ Goals
-- Using Kaggle's 'London Bike Share Dataset', I tried to predict the demands for bikes in London.
-- Compared DNN, Random Forest Regressor, XGBRegressor and LGBMRegressor
-- Made prediction using RNN,LSTM,GRU (based on Time Series)
+- Classify fake job posts using deep learning classifier
+- Compare stem vs non-stem jobs' fake posts 
+
 ### 𝌞 Data Preprocessing
-* Kaggle Datasets  
-   <img width="689" alt="Screen Shot 2022-06-13 at 9 43 15 PM" src="https://user-images.githubusercontent.com/98932859/173356366-869ab439-752f-4908-9e9a-2c5ed5637a69.png">
-   
-  |Variable|Explanation|
-  |------|---|
-  |timestamp|Time of Rental|
-  |cnt|Number of users|
-  |t1|Temperature|
-  |t2|Windchill Temperature|
-  |hum|Humidity|
-  |wind_speed|Wind Speed|
-  |weather_code|Weather Code by Category|
-  |is_holiday|Whether the day is holiday|
-  |is_weekend|Whether the day is weekend|
-  |season|Season|
-  
+* Stem vs Non-Stem 
+  - Stem (95.6% normal, 4.4% fraud)/ Non-stem (94.7% normal, 5.3% fraud)
+                                                                             
+   <img width="655" alt="Screen Shot 2022-06-13 at 10 30 59 PM" src="https://user-images.githubusercontent.com/98932859/173364929-9b46d157-44f8-430c-ac26-4bf4d0972210.png">  
+* Kaggle dataset explanation   
+  - Used 'fake_job_postings.csv' on Kaggle
+  - Data based on 866 fake job postings
+  - 16 independent variables & 1 dependent variable ('Fraudulent')
 * Preprocessing
   - Divided 'timestamp' by year, month, day of week, and hour
      <img width="671" alt="Screen Shot 2022-06-13 at 9 56 47 PM" src="https://user-images.githubusercontent.com/98932859/173358820-f52f57a5-07cc-4604-abb3-9ae2d9690611.png">
