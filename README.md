@@ -13,7 +13,7 @@
   - Used 'fake_job_postings.csv' on Kaggle
   - Data based on 866 fake job postings
   - 16 independent variables & 1 dependent variable ('Fraudulent')
-* Preprocessing
+* Preprocessing (여기서부터 수정)
   - Divided 'timestamp' by year, month, day of week, and hour
      <img width="671" alt="Screen Shot 2022-06-13 at 9 56 47 PM" src="https://user-images.githubusercontent.com/98932859/173358820-f52f57a5-07cc-4604-abb3-9ae2d9690611.png">
     
