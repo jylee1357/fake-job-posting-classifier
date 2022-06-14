@@ -14,11 +14,11 @@
   - Data based on 866 fake job postings
   - 16 independent variables & 1 dependent variable ('Fraudulent')
 * Preprocessing (여기서부터 수정)
-  - Divided 'timestamp' by year, month, day of week, and hour
-     <img width="671" alt="Screen Shot 2022-06-13 at 9 56 47 PM" src="https://user-images.githubusercontent.com/98932859/173358820-f52f57a5-07cc-4604-abb3-9ae2d9690611.png">
-    
-  - Removed outliers     
-     <img width="669" alt="Screen Shot 2022-06-13 at 9 59 00 PM" src="https://user-images.githubusercontent.com/98932859/173359110-4b9d1177-73af-4016-9f6e-5a9ae52a8942.png">
+  - Through one-hot encoder, I transformed categorical variables ('location', 'employment type', 'required experience', 'required education')
+     <img width="969" alt="Screen Shot 2022-06-14 at 10 27 53 PM" src="https://user-images.githubusercontent.com/98932859/173588765-d0a5d360-f72f-4aca-b84b-e07a50de586c.png">
+  - Preprocessed Textual Data
+     + ‘title’, ‘benefits’, ‘descriptions’, ‘company profile’, ‘function’, ‘industry’, ‘department’, ‘requirements’, ‘benefits’
+     + Using simple imputer, null values were removed 
 
   - Changed 'weather_code', 'season', 'year', 'month', 'hour' into dummy variables    
      <img width="672" alt="Screen Shot 2022-06-13 at 10 01 31 PM" src="https://user-images.githubusercontent.com/98932859/173359580-a88feb14-238c-437b-8d87-7b30fd9ca64f.png">  
