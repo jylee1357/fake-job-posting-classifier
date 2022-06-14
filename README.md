@@ -19,20 +19,27 @@
   - Preprocessed Textual Data
      + ‘title’, ‘benefits’, ‘descriptions’, ‘company profile’, ‘function’, ‘industry’, ‘department’, ‘requirements’, ‘benefits’
      + Using simple imputer, null values were removed 
-
-  - Changed 'weather_code', 'season', 'year', 'month', 'hour' into dummy variables    
-     <img width="672" alt="Screen Shot 2022-06-13 at 10 01 31 PM" src="https://user-images.githubusercontent.com/98932859/173359580-a88feb14-238c-437b-8d87-7b30fd9ca64f.png">  
     
-
 ### ⌨️ Models
-* Model Comparison 
-  - Deep learning model's RMSE
-    <img width="1040" alt="Screen Shot 2022-06-13 at 10 11 43 PM" src="https://user-images.githubusercontent.com/98932859/173361479-b682afb8-11ab-4e81-9b52-cdabe619b8ac.png">
-    <img width="1028" alt="Screen Shot 2022-06-13 at 10 13 31 PM" src="https://user-images.githubusercontent.com/98932859/173361722-89449368-f598-4d7f-abc2-5d705319e0ac.png">  
+* Model
+  - Train set: 75%, Test set: 25%
+  - Logisitic Regression, Decision Tree, Random Forest Classifier, Neural Network were the selected models
     
-   - Time series model's RMSE
-    <img width="997" alt="Screen Shot 2022-06-13 at 10 17 13 PM" src="https://user-images.githubusercontent.com/98932859/173362374-c2c3510f-da8d-4365-8b4d-ebf1375be862.png">
-    
+* Model Performance  
+    <img width="515" alt="Screen Shot 2022-06-14 at 10 33 59 PM" src="https://user-images.githubusercontent.com/98932859/173589965-90edb809-bac9-4fcf-8ad9-f9da33993e9e.png">  
+      |Model|Accuracy|
+    |------|---|
+    |Decision Tree|0.986|
+    |Random Forest Classifier|0.984|
+    |Logistic Regression|0.981|
+    |Neural Network|0.950|
+* Model Performance after K-fold cross validation    
+     |Model (with CV)|Accuracy|
+    |------|---|
+    |Decision Tree|0.986 → 0.989|
+    |Random Forest Classifier|0.984 → 0.982|
+    |Logistic Regression|0.981 → 0.978|
+    |Neural Network|0.950 → 0.950| 
 ### 📍 Takeaway
 * In deep learning model, Random Forest Regressor scored the lowest RMSE
 * In time series model, LSTM scored the lowest RMSE
