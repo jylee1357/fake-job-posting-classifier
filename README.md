@@ -41,6 +41,15 @@
     |Logistic Regression|0.981 → 0.978|
     |Neural Network|0.950 → 0.950| 
 ### 📍 Takeaway
-* In deep learning model, Random Forest Regressor scored the lowest RMSE
-* In time series model, LSTM scored the lowest RMSE
+* Feature Importance  
+  <img width="711" alt="Screen Shot 2022-06-14 at 10 41 48 PM" src="https://user-images.githubusercontent.com/98932859/173591712-085e8c51-8189-44bd-8099-acbd8daa0306.png">
+  - 'function' (your role in the company)
+  - 'industry' (type of industry)
+  - 'has_company_logo' (whether the company has a logo or not)
+  - 'benefits' (incentives that company provides)
+  - 'department' (department in a company)
+* Limitations  
+
+  - Since only four percent of the dataset were from actual fake job postings, the target variable was not enough
+  - Could not perform sentiment analysis on textual data (with sentiment analaysis the result might have been different)
 
